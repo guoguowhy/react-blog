@@ -30,6 +30,10 @@ export default class Header extends Component {
                 name:'typescript',
                 url:'/'
             },
+            {
+                name:'测试路由跳转',
+                url:'/test'
+            },
         ]
     }
  }

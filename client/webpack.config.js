@@ -7,7 +7,8 @@ module.exports = {
     entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js'
+        filename: 'bundle.js',
+        publicPath: '/'
     },
     module:{
         rules: [
@@ -53,5 +54,9 @@ module.exports = {
   ],
   resolve: {
     extensions: ['.js', '.json', '.sass', '.scss', '.less', 'jsx']
+  },
+  devServer: {
+    //这句不加的话路由就跳转不了
+    historyApiFallback: true,
   },
 };

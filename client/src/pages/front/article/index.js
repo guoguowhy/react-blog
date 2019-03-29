@@ -11,7 +11,7 @@ export default class App extends Component {
 
     render() {
         return (
-            <div>
+            <div>新页面
             </div>
         ) 
     }

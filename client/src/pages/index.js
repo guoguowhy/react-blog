@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component} from 'react'
 import Header from '../components/header'
 import ArticleLists from './front/list'
 
@@ -13,15 +13,10 @@ export default class App extends Component {
  }
 
 
- render() {
-    return (
-            <div id="front-view">
-                <div className="f-wrap">
-                    <Header />
-                    <div className="f-content"> 
-                        <ArticleLists />
-                    </div>
-                </div>
+    render() {
+        return (
+            <div className="f-content"> 
+                <ArticleLists />
             </div>
         ) 
     }
