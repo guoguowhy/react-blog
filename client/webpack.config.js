@@ -17,8 +17,16 @@ module.exports = {
                 exclude: /node_modules/
           },
           {
-            test: /\.(css|less|scss)(\?.*)?$/,
-            loader: 'style-loader!css-loader!postcss-loader'
+            test: /\.less$/,
+            use: [{
+              loader: 'style-loader'
+            }, {
+                loader: 'css-loader' 
+            },{
+              loader: 'postcss-loader' 
+            }, {
+              loader: 'less-loader' 
+            }]
           },
           {
               test: /\.(png|jpg|gif|JPG|GIF|PNG|BMP|bmp|JPEG|jpeg)$/,

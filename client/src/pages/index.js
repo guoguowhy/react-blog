@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import Header from '../components/header'
+import ArticleLists from './front/list'
+
 import './index.less'
 
 export default class App extends Component {
@@ -13,9 +15,13 @@ export default class App extends Component {
 
  render() {
     return (
-            <div className="front-wrap">
-                <Header />
-                <div className="front-content"> </div>
+            <div id="front-view">
+                <div className="f-wrap">
+                    <Header />
+                    <div className="f-content"> 
+                        <ArticleLists />
+                    </div>
+                </div>
             </div>
         ) 
     }

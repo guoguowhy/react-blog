@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-//import './index.less'
+import './index.less'
 
 export default class App extends Component {
  constructor(props) {

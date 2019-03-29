@@ -1,0 +1,43 @@
+.f-header{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background: #090a0b no-repeat 50%;
+    background-size: cover;
+    .f-header-nav{
+        max-width: 1200px;
+        height: 100%;
+        margin:0 auto;
+        .f-logo{
+            display: block;
+            float: left;
+            width: 40px;
+            height: 40px;
+            margin-top: 10px;
+            margin-right: 15px;
+            border-radius: 50%;
+            background: url(../../assert/img/logo.jpeg) #fff no-repeat;
+            background-size: 100% 100%;
+        }
+        .f-header-menu{
+            float: left;
+            li{
+                float: left;
+                padding:0 20px;
+                font-size: 12px;
+                a{
+                    display: inline-block;
+                    color: #fff;
+                    opacity: .8;
+                    text-shadow: 0 0 10px #000;
+                    font-weight: 600;
+                    text-transform:uppercase;
+                    cursor: pointer;
+                    &:hover{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
