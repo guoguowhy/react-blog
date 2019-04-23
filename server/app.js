@@ -9,6 +9,7 @@ const json = require('koa-json')
 const onerror = require('koa-onerror')
 const bodyparser = require('koa-bodyparser')
 const logger = require('koa-logger')
+const cors = require('koa-cors')
 
 // error handler
 onerror(app)
@@ -46,6 +47,8 @@ app.use(async (ctx, next) => {
 app.on('error', (err, ctx) => {
   console.error('server error', err, ctx)
 });
+
+app.use(cors());
 
 routes(app)
 
