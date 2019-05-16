@@ -11,6 +11,18 @@ export default class ArticleLists extends Component {
         }
     }
 
+    componentDidMount(){
+
+    }
+
+    componentDidUpdate(){
+
+    }
+
+    componentWillUnmount(){
+        
+    }
+
     render() {
         return (
             <div className="f-lists">

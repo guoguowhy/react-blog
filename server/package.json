@@ -28,6 +28,8 @@
     "mongoose": "^5.4.12"
   },
   "devDependencies": {
-    "nodemon": "^1.8.1"
+    "formidable": "^1.2.1",
+    "nodemon": "^1.8.1",
+    "util": "^0.12.0"
   }
 }
