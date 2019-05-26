@@ -11,7 +11,8 @@ export default class App extends Component {
 
     render() {
         return (
-            <div>
+            <div className="">
+                article 管理页面
             </div>
         ) 
     }

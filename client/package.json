@@ -37,6 +37,7 @@
     "webpack-merge": "^4.2.1"
   },
   "dependencies": {
+    "antd": "^3.19.0",
     "history": "^4.9.0",
     "react": "^16.8.5",
     "react-dom": "^16.8.5",

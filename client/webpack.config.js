@@ -18,7 +18,7 @@ module.exports = {
                 exclude: /node_modules/
           },
           {
-            test: /\.less$/,
+            test: /\.(less|css)$/,
             use: [{
               loader: 'style-loader'
             }, {
@@ -53,7 +53,7 @@ module.exports = {
     }),
   ],
   resolve: {
-    extensions: ['.js', '.json', '.sass', '.scss', '.less', 'jsx']
+    extensions: ['.js', '.json','.css', '.sass',  '.scss', '.less', 'jsx']
   },
   devServer: {
     //这句不加的话路由就跳转不了
